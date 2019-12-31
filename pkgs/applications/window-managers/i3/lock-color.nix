@@ -54,9 +54,6 @@ stdenv.mkDerivation rec {
     homepage = https://github.com/PandorasFox/i3lock-color;
     maintainers = with maintainers; [ malyn ];
     license = licenses.bsd3;
-
-    # Needs the SSE2 instruction set. See upstream issue
-    # https://github.com/chrjguill/i3lock-color/issues/44
-    platforms = platforms.x86;
+    platforms = platforms.all;
   };
 }
